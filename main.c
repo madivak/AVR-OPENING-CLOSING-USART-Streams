@@ -19,17 +19,6 @@ static FILE uart0_output = FDEV_SETUP_STREAM(uart0_putchar, NULL, _FDEV_SETUP_WR
 static FILE uart1_input = FDEV_SETUP_STREAM(NULL, uart1_getchar, _FDEV_SETUP_READ);
 static FILE uart0_input = FDEV_SETUP_STREAM(NULL, uart0_getchar, _FDEV_SETUP_READ);
 
-// char string0[]="AT\r\n";
-// char string1[]="AT+CMGF=1\r\n";
-// char string2[]="AT+CMGL=\"REC UNREAD\"\r\n";
-// 
-// char status0[]="CAR ON\r\n";
-// char status1[]="CAR OFF\r\n";
-// char status2[]="Status Unknown\r\n";
-// 
-// void statuscheck(void);
-//char String[]="12345--Hello world--";
-
 
 int main( void )
 {
